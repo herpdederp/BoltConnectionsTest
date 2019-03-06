@@ -29,10 +29,8 @@ MonoBehaviour:
     serverDejitterDelayMin: 3
     serverDejitterDelayMax: 9
     serverConnectionLimit: 32
-    serverConnectionAcceptMode: 1
-    commandDejitterDelay: 3
+    serverConnectionAcceptMode: 0
     commandQueueSize: 60
-    commandDelayAllowed: 12
     commandRedundancy: 6
     commandPingMultiplier: 1.25
     useNetworkSimulation: 0
@@ -43,6 +41,8 @@ MonoBehaviour:
     connectionTimeout: 10000
     connectionRequestTimeout: 500
     connectionRequestAttempts: 20
+    disableAutoSceneLoading: 0
+    EnableIPv6: 0
   debugClientCount: 2
   debugStartPort: 50538
   debugStartMapName: PhotonGame
@@ -60,11 +60,9 @@ MonoBehaviour:
   masterServerGameId: 09A20926-601A-4EF4-BFEE-374761B0D2A5
   showBoltEntityHints: 0
   serializeProjectAsText: 0
-  photonAppId: ' 564ad7d4-b951-46bb-9347-859213b9eda6'
+  photonAppId: 
   photonUsePunch: 1
   photonCloudRegionIndex: 13
-  photonUseOnPremise: 0
-  photonOnPremiseIpAddress: 127.0.0.1
   instantiateMode: 2
   globalEntityBehaviourQueryOption: 3
   globalEntityPriorityCalculatorQueryOption: 3

@@ -10,6 +10,8 @@ public partial class BoltDebugStart : BoltInternal.GlobalEventListenerBase
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+
+		Application.targetFrameRate = 60;
     }
 
     void Start()
@@ -64,7 +66,7 @@ end tell'";
 
     public override void BoltStartDone()
     {
-        if (BoltNetwork.isServer)
+        if (BoltNetwork.IsServer)
         {
             BoltNetwork.LoadScene(BoltRuntimeSettings.instance.debugStartMapName);
         }

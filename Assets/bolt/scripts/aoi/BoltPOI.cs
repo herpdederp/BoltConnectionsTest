@@ -68,8 +68,8 @@ public class BoltPOI : Bolt.EntityBehaviour {
   }
 
   void BoltSceneObject() {
-    if (BoltNetwork.isClient) {
-      GameObject.Destroy(gameObject);
+    if (BoltNetwork.IsClient) {
+            Destroy(gameObject);
     }
   }
 
